@@ -18,115 +18,179 @@ typedef struct Data
 } A;
 A ke[1000];
 
-void printTofile(char *nama, int tgl, int bln, int thn, int JT, int JE, int TT, long long HT, long long TP)
+// Fuction untuk input data ke file
+void printTofile(char *nama, int tgl, int bln, int thn, int JT, int JE, int TT)
 {
+    long long HT;
+    long long TP;
     if (JT == 1)
     {
         if (JE == 1)
         {
+            HT = 100000;
+            TP = (TT * HT);
             char JT1[] = "Tiket Konser";
             char JE1[] = "Pestapora";
             fprintf(Tiket, "%s#%d#%d#%d#%s#%s#%d#%lld#%lld\n", nama, tgl, bln, thn, JT1, JE1, TT, HT, TP);
+            printf("Harga Tiket      : %lld\n", HT);
+            printf("Total Pembayaran : %lld\n", TP);
         }
         else if (JE == 2)
         {
+            HT = 150000;
+            TP = (TT * HT);
             char JT1[] = "Tiket Konser";
             char JE1[] = "We The Fest";
             fprintf(Tiket, "%s#%d#%d#%d#%s#%s#%d#%lld#%lld\n", nama, tgl, bln, thn, JT1, JE1, TT, HT, TP);
+            printf("Harga Tiket      : %lld\n", HT);
+            printf("Total Pembayaran : %lld\n", TP);
         }
         else if (JE == 3)
         {
+            HT = 200000;
+            TP = (TT * HT);
             char JT1[] = "Tiket Konser";
             char JE1[] = "Heads In The Cloud";
             fprintf(Tiket, "%s#%d#%d#%d#%s#%s#%d#%lld#%lld\n", nama, tgl, bln, thn, JT1, JE1, TT, HT, TP);
+            printf("Harga Tiket      : %lld\n", HT);
+            printf("Total Pembayaran : %lld\n", TP);
         }
     }
     else if (JT == 2)
     {
         if (JE == 1)
         {
+            HT = 400000;
+            TP = (TT * HT);
             char JT1[] = "Tiket Penginapan";
             char JE1[] = "Hotel";
             fprintf(Tiket, "%s#%d#%d#%d#%s#%s#%d#%lld#%lld\n", nama, tgl, bln, thn, JT1, JE1, TT, HT, TP);
+            printf("Harga Tiket      : %lld\n", HT);
+            printf("Total Pembayaran : %lld\n", TP);
         }
         else if (JE == 2)
         {
+            HT = 1000000;
+            TP = (TT * HT);
             char JT1[] = "Tiket Penginapan";
             char JE1[] = "Villa";
             fprintf(Tiket, "%s#%d#%d#%d#%s#%s#%d#%lld#%lld\n", nama, tgl, bln, thn, JT1, JE1, TT, HT, TP);
+            printf("Harga Tiket      : %lld\n", HT);
+            printf("Total Pembayaran : %lld\n", TP);
         }
         else if (JE == 3)
         {
+            HT = 500000;
+            TP = (TT * HT);
             char JT1[] = "Tiket Penginapan";
             char JE1[] = "Glamping";
             fprintf(Tiket, "%s#%d#%d#%d#%s#%s#%d#%lld#%lld\n", nama, tgl, bln, thn, JT1, JE1, TT, HT, TP);
+            printf("Harga Tiket      : %lld\n", HT);
+            printf("Total Pembayaran : %lld\n", TP);
         }
     }
     else if (JT == 3)
     {
         if (JE == 1)
         {
+            HT = 50000;
+            TP = (TT * HT);
             char JT1[] = "Tiket Pertandingan";
             char JE1[] = "Sepak Bola";
             fprintf(Tiket, "%s#%d#%d#%d#%s#%s#%d#%lld#%lld\n", nama, tgl, bln, thn, JT1, JE1, TT, HT, TP);
+            printf("Harga Tiket      : %lld\n", HT);
+            printf("Total Pembayaran : %lld\n", TP);
         }
         else if (JE == 2)
         {
+            HT = 20000;
+            TP = (TT * HT);
             char JT1[] = "Tiket Pertandingan";
             char JE1[] = "Basket";
             fprintf(Tiket, "%s#%d#%d#%d#%s#%s#%d#%lld#%lld\n", nama, tgl, bln, thn, JT1, JE1, TT, HT, TP);
+            printf("Harga Tiket      : %lld\n", HT);
+            printf("Total Pembayaran : %lld\n", TP);
         }
         else if (JE == 3)
         {
+            HT = 25000;
+            TP = (TT * HT);
             char JT1[] = "Tiket Pertandingan";
             char JE1[] = "Badminton";
             fprintf(Tiket, "%s#%d#%d#%d#%s#%s#%d#%lld#%lld\n", nama, tgl, bln, thn, JT1, JE1, TT, HT, TP);
+            printf("Harga Tiket      : %lld\n", HT);
+            printf("Total Pembayaran : %lld\n", TP);
         }
     }
     else if (JT == 4)
     {
         if (JE == 1)
         {
+            HT = 1200000;
+            TP = (TT * HT);
             char JT1[] = "Tiket Penerbangan";
             char JE1[] = "Garuda Indonesia";
             fprintf(Tiket, "%s#%d#%d#%d#%s#%s#%d#%lld#%lld\n", nama, tgl, bln, thn, JT1, JE1, TT, HT, TP);
+            printf("Harga Tiket      : %lld\n", HT);
+            printf("Total Pembayaran : %lld\n", TP);
         }
         else if (JE == 2)
         {
+            HT = 1000000;
+            TP = (TT * HT);
             char JT1[] = "Tiket Penerbangan";
             char JE1[] = "Air Asia";
             fprintf(Tiket, "%s#%d#%d#%d#%s#%s#%d#%lld#%lld\n", nama, tgl, bln, thn, JT1, JE1, TT, HT, TP);
+            printf("Harga Tiket      : %lld\n", HT);
+            printf("Total Pembayaran : %lld\n", TP);
         }
         else if (JE == 3)
         {
+            HT = 1100000;
+            TP = (TT * HT);
             char JT1[] = "Tiket Penerbangan";
             char JE1[] = "City Link";
             fprintf(Tiket, "%s#%d#%d#%d#%s#%s#%d#%lld#%lld\n", nama, tgl, bln, thn, JT1, JE1, TT, HT, TP);
+            printf("Harga Tiket      : %lld\n", HT);
+            printf("Total Pembayaran : %lld\n", TP);
         }
     }
     else if (JT == 5)
     {
         if (JE == 1)
         {
+            HT = 40000;
+            TP = (TT * HT);
             char JT1[] = "Tiket Bioskop";
             char JE1[] = "Avengers";
             fprintf(Tiket, "%s#%d#%d#%d#%s#%s#%d#%lld#%lld\n", nama, tgl, bln, thn, JT1, JE1, TT, HT, TP);
+            printf("Harga Tiket      : %lld\n", HT);
+            printf("Total Pembayaran : %lld\n", TP);
         }
         else if (JE == 2)
         {
+            HT = 35000;
+            TP = (TT * HT);
             char JT1[] = "Tiket Bioskop";
             char JE1[] = "Barbie";
             fprintf(Tiket, "%s#%d#%d#%d#%s#%s#%d#%lld#%lld\n", nama, tgl, bln, thn, JT1, JE1, TT, HT, TP);
+            printf("Harga Tiket      : %lld\n", HT);
+            printf("Total Pembayaran : %lld\n", TP);
         }
         else if (JE == 3)
         {
+            HT = 30000;
+            TP = (TT * HT);
             char JT1[] = "Tiket Bioskop";
             char JE1[] = "The Conjuring";
             fprintf(Tiket, "%s#%d#%d#%d#%s#%s#%d#%lld#%lld\n", nama, tgl, bln, thn, JT1, JE1, TT, HT, TP);
+            printf("Harga Tiket      : %lld\n", HT);
+            printf("Total Pembayaran : %lld\n", TP);
         }
     }
 }
 
+// Function untuk mencari nama
 void searchNama(char *na, int idx)
 {
     for (int i = 0; i < idx; i++)
@@ -138,6 +202,7 @@ void searchNama(char *na, int idx)
     }
 }
 
+// Function untuk mencari data berdasarkan tanngal
 void searchData(int tgl, int bln, int thn, int idx)
 {
     for (int i = 0; i < idx; i++)
@@ -149,6 +214,7 @@ void searchData(int tgl, int bln, int thn, int idx)
     }
 }
 
+// Function untuk mencari data berdasarkan harga
 void searchHarga(int n, int idx)
 {
     for (int i = 0; i < idx; i++)
@@ -160,193 +226,179 @@ void searchHarga(int n, int idx)
     }
 }
 
+// Function untuk mencari data berdasarkan jenis event
 void searchJenisEvent(int p, int idx)
 {
-    if(p == 1)
+    if (p == 1)
     {
         char namaEvent[] = "Pestapora";
         for (int i = 0; i < idx; i++)
         {
-            if(strcmp(ke[i].jenisEvent, namaEvent) == 0)
+            if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
                 printf("%s %d %d %d %s %s %d %lld %lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
-        
     }
-    else if(p == 2)
+    else if (p == 2)
     {
         char namaEvent[] = "We The Fest";
         for (int i = 0; i < idx; i++)
-     {
-            if(strcmp(ke[i].jenisEvent, namaEvent) == 0)
+        {
+            if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
                 printf("%s %d %d %d %s %s %d %lld %lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
-        
     }
-    else if(p == 3)
+    else if (p == 3)
     {
         char namaEvent[] = "Head In The Clouds";
         for (int i = 0; i < idx; i++)
         {
-            if(strcmp(ke[i].jenisEvent, namaEvent) == 0)
+            if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
                 printf("%s %d %d %d %s %s %d %lld %lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
-        
     }
-    else if(p == 4)
+    else if (p == 4)
     {
         char namaEvent[] = "Hotel";
         for (int i = 0; i < idx; i++)
         {
-            if(strcmp(ke[i].jenisEvent, namaEvent) == 0)
+            if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
                 printf("%s %d %d %d %s %s %d %lld %lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
-        
     }
-    else if(p == 5)
+    else if (p == 5)
     {
         char namaEvent[] = "Villa";
         for (int i = 0; i < idx; i++)
         {
-            if(strcmp(ke[i].jenisEvent, namaEvent) == 0)
+            if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
                 printf("%s %d %d %d %s %s %d %lld %lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
-        
     }
-    else if(p == 6)
+    else if (p == 6)
     {
         char namaEvent[] = "Glamping";
         for (int i = 0; i < idx; i++)
         {
-            if(strcmp(ke[i].jenisEvent, namaEvent) == 0)
+            if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
                 printf("%s %d %d %d %s %s %d %lld %lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
-        
     }
-    else if(p == 7)
+    else if (p == 7)
     {
         char namaEvent[] = "Sepak Bola";
         for (int i = 0; i < idx; i++)
         {
-            if(strcmp(ke[i].jenisEvent, namaEvent) == 0)
+            if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
                 printf("%s %d %d %d %s %s %d %lld %lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
-        
     }
-    else if(p == 8)
+    else if (p == 8)
     {
         char namaEvent[] = "Basket";
         for (int i = 0; i < idx; i++)
         {
-            if(strcmp(ke[i].jenisEvent, namaEvent) == 0)
+            if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
                 printf("%s %d %d %d %s %s %d %lld %lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
-        
     }
-    else if(p == 9)
+    else if (p == 9)
     {
         char namaEvent[] = "Badminton";
         for (int i = 0; i < idx; i++)
         {
-            if(strcmp(ke[i].jenisEvent, namaEvent) == 0)
+            if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
                 printf("%s %d %d %d %s %s %d %lld %lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
-        
     }
-    else if(p == 10)
+    else if (p == 10)
     {
         char namaEvent[] = "Garuda Indonesia";
         for (int i = 0; i < idx; i++)
         {
-            if(strcmp(ke[i].jenisEvent, namaEvent) == 0)
+            if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
                 printf("%s %d %d %d %s %s %d %lld %lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
-        
     }
-    else if(p == 11)
+    else if (p == 11)
     {
         char namaEvent[] = "Air Asia";
         for (int i = 0; i < idx; i++)
         {
-            if(strcmp(ke[i].jenisEvent, namaEvent) == 0)
+            if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
                 printf("%s %d %d %d %s %s %d %lld %lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
-        
     }
-    else if(p == 12)
+    else if (p == 12)
     {
         char namaEvent[] = "City Link";
         for (int i = 0; i < idx; i++)
         {
-            if(strcmp(ke[i].jenisEvent, namaEvent) == 0)
+            if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
                 printf("%s %d %d %d %s %s %d %lld %lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
-        
     }
-    else if(p == 13)
+    else if (p == 13)
     {
         char namaEvent[] = "Avengers";
         for (int i = 0; i < idx; i++)
         {
-            if(strcmp(ke[i].jenisEvent, namaEvent) == 0)
+            if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
                 printf("%s %d %d %d %s %s %d %lld %lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
-        
     }
-    else if(p == 14)
+    else if (p == 14)
     {
         char namaEvent[] = "Barbie";
         for (int i = 0; i < idx; i++)
         {
-            if(strcmp(ke[i].jenisEvent, namaEvent) == 0)
+            if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
                 printf("%s %d %d %d %s %s %d %lld %lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
-        
     }
-    else if(p == 15)
+    else if (p == 15)
     {
         char namaEvent[] = "The Conjuring";
         for (int i = 0; i < idx; i++)
         {
-            if(strcmp(ke[i].jenisEvent, namaEvent) == 0)
+            if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
                 printf("%s %d %d %d %s %s %d %lld %lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
-        
     }
 }
 
 int main()
 {
-    char ulang;
+    char ulang;                    // Variable yang dugunakan oleh semua fungsi
     int M, pun;                    // Variable yang digunakan oleh semua fungsi
     long long HT, TP;              // Variable yang digunakan oleh semua fungsi
     char nama[101];                // Variable case 1
@@ -355,7 +407,7 @@ int main()
     char pilnama[101];             // Variable case 3
 
 Menu:
-    // printf("\e[1;1H\e[2J");
+    printf("\e[1;1H\e[2J");
     printf("====================================\n");
     printf("               Menu\n");
     printf("====================================\n");
@@ -381,7 +433,7 @@ Menu:
             scanf("%d", &tgl);
             printf("Bulan Transaksi(Angka)   : ");
             scanf("%d", &bln);
-            printf("Tahun Transaksi(Angak)   : ");
+            printf("Tahun Transaksi(Angka)   : ");
             scanf("%d", &thn);
 
             printf("\n-> Jenis Tiket <-\n");
@@ -399,7 +451,7 @@ Menu:
                 printf("1. Pestapora\n");
                 printf("2. We The Fest\n");
                 printf("3. Head In The Clouds\n");
-                printf("Pilih Nama Event(Angka): ");
+                printf("Pilih Nama Event (Angka): ");
                 scanf("%d", &JE);
             }
             else if (JT == 2)
@@ -408,7 +460,7 @@ Menu:
                 printf("1. Hotel\n");
                 printf("2. Villa\n");
                 printf("3. Glamping\n");
-                printf("Pilih Nama Event(Angka): ");
+                printf("Pilih Nama Event (Angka): ");
                 scanf("%d", &JE);
             }
             else if (JT == 3)
@@ -417,7 +469,7 @@ Menu:
                 printf("1. Sepak Bola\n");
                 printf("2. Basket\n");
                 printf("3. Badminton\n");
-                printf("Pilih Nama Event(Angka): ");
+                printf("Pilih Nama Event (Angka): ");
                 scanf("%d", &JE);
             }
             else if (JT == 4)
@@ -426,7 +478,7 @@ Menu:
                 printf("1. Garuda Indonesia\n");
                 printf("2. Air Asia\n");
                 printf("3. City Link\n");
-                printf("Pilih Nama Event(Angka): ");
+                printf("Pilih Nama Event (Angka): ");
                 scanf("%d", &JE);
             }
             else if (JT == 5)
@@ -435,7 +487,7 @@ Menu:
                 printf("1. Avangers\n");
                 printf("2. Barbie\n");
                 printf("3. The Conjuring\n");
-                printf("Pilih Nama Event(Angka): \n");
+                printf("Pilih Nama Event (Angka): \n");
                 scanf("%d", &JE);
             }
 
@@ -443,14 +495,10 @@ Menu:
 
             printf("Total Tiket      : ");
             scanf("%d", &TT);
-            printf("Harga Tiket      : ");
-            scanf("%lld", &HT);
-            printf("Total Pembayaran : ");
-            scanf("%lld", &TP);
+            printTofile(nama, tgl, bln, thn, JT, JE, TT);
             printf("Apakah sudah selesai? (0 = sudah, 1 = belum): ");
             scanf("%d", &pun);
 
-            printTofile(nama, tgl, bln, thn, JT, JE, TT, HT, TP);
 
         } while (pun == 1);
         printf("\nTiket berhasil ditambahkan\n\n");
@@ -465,7 +513,28 @@ Menu:
         }
 
     case 2:
-        break;
+        Tiket = fopen("Sales.txt", "r");
+
+        int SLP;
+        printf("-> Sortir Laporan Penjualan <-\n");
+        printf("1. Tanggal\n");
+        printf("2. Nama\n");
+        printf("3. Jumlah pembelian\n");
+        printf("4. Stok\n");
+        printf("5. Total penjualan\n");
+        printf(">> ");
+        scanf("%d", &SLP);
+
+        printf("\n");
+        printf("Apakah ingin kembali ke Menu? (Y/T): ");
+        scanf(" %c", &ulang);
+        if (ulang == 'Y' || ulang == 'y')
+            goto Menu;
+        else
+        {
+            fclose(Tiket);
+            break;
+        }
 
     case 3:
         Tiket = fopen("Sales.txt", "r");
@@ -514,58 +583,60 @@ Menu:
         {
             do
             {
-            printf("\nCari harga tiket(1 = Termahal / 2 = Termurah): ");
-            scanf("%d", &pilharga);
-            printf("\n");
-            int harga = ke[0].hargaBarang;
-            if (pilharga == 1)
-            {
-                for (int i = 0; i < idx; i++)
+                printf("\nCari harga tiket(1 = Termahal / 2 = Termurah): ");
+                scanf("%d", &pilharga);
+                printf("\n");
+                int harga = ke[0].hargaBarang;
+                if (pilharga == 1)
                 {
-                    if (harga < ke[i].hargaBarang) harga = ke[i].hargaBarang;
+                    for (int i = 0; i < idx; i++)
+                    {
+                        if (harga < ke[i].hargaBarang)
+                            harga = ke[i].hargaBarang;
+                    }
                 }
-            }
-            else if (pilharga == 2)
-            {
-                for (int i = 0; i < idx; i++)
+                else if (pilharga == 2)
                 {
-                    if (harga > ke[i].hargaBarang) harga = ke[i].hargaBarang;
+                    for (int i = 0; i < idx; i++)
+                    {
+                        if (harga > ke[i].hargaBarang)
+                            harga = ke[i].hargaBarang;
+                    }
                 }
-            }
-            searchHarga(harga, idx);
-            printf("\n");
-            printf("Ingin mencari harga tiket lagi? (0 = tidak, 1 = lagi): ");
-            scanf("%d", &pun);
-            }while(pun == 1);
+                searchHarga(harga, idx);
+                printf("\n");
+                printf("Ingin mencari harga tiket lagi? (0 = tidak, 1 = lagi): ");
+                scanf("%d", &pun);
+            } while (pun == 1);
         }
-        else if(S == 4)
+        else if (S == 4)
         {
             do
             {
-            printf("\n");
-            printf("-> Jenis Event <-\n");
-            printf("1.  Pestapora\n");
-            printf("2.  We The Fest\n");
-            printf("3.  Head In The Clouds\n");
-            printf("4.  Hotel\n");
-            printf("5.  Villa\n");
-            printf("6.  Glamping\n");
-            printf("7.  Sepak Bola\n");
-            printf("8.  Basket\n");
-            printf("9.  Badminton\n");
-            printf("10. Garuda Indonesia\n");
-            printf("11. Air Asia\n");
-            printf("12. City Link\n");
-            printf("13. Avangers\n");
-            printf("14. Barbie\n");
-            printf("15. The Conjuring\n");
-            printf("\nPilih jenis event: ");
-            scanf("%d", &PJE);
-            searchJenisEvent(PJE, idx);
-            printf("\n");
-            printf("Ingin mencari harga tiket lagi? (0 = tidak, 1 = lagi): ");
-            scanf("%d", &pun);
-            }while (pun == 1);
+                printf("\n");
+                printf("-> Jenis Event <-\n");
+                printf("1.  Pestapora\n");
+                printf("2.  We The Fest\n");
+                printf("3.  Head In The Clouds\n");
+                printf("4.  Hotel\n");
+                printf("5.  Villa\n");
+                printf("6.  Glamping\n");
+                printf("7.  Sepak Bola\n");
+                printf("8.  Basket\n");
+                printf("9.  Badminton\n");
+                printf("10. Garuda Indonesia\n");
+                printf("11. Air Asia\n");
+                printf("12. City Link\n");
+                printf("13. Avangers\n");
+                printf("14. Barbie\n");
+                printf("15. The Conjuring\n");
+                printf("\nPilih jenis event: ");
+                scanf("%d", &PJE);
+                searchJenisEvent(PJE, idx);
+                printf("\n");
+                printf("Ingin mencari harga tiket lagi? (0 = tidak, 1 = lagi): ");
+                scanf("%d", &pun);
+            } while (pun == 1);
         }
         printf("\n");
         printf("Apakah ingin kembali ke Menu? (Y/T): ");
