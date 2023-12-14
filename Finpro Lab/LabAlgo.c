@@ -16,7 +16,7 @@ typedef struct Data
     long long totalPembelian;
 
 } A;
-A ke[1000];
+A ke[10001];
 
 void stok(int idx, int *pestapora, int *wethefest, int *hitc, int *hotel, int *villa, int *glamping, int *sepakbola, int *basket, int *badminton, int *garuda, int *airasia, int *citylink, int *avengers, int *barbie, int *conjuring)
 {
@@ -301,7 +301,7 @@ void searchNama(char *na, int idx)
     {
         if (strcmp(na, ke[i].nama) == 0)
         {
-            printf("%-7s %-3d %-3d %-5d %-22s %-22s %-2d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
+            printf("%-10s %-8d %-6d %-8d %-22s %-22s %-20d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
         }
     }
 }
@@ -313,7 +313,7 @@ void searchData(int tgl, int bln, int thn, int idx)
     {
         if (ke[i].tanggal == tgl && ke[i].bulan == bln && ke[i].tahun == thn)
         {
-            printf("%-7s %-3d %-3d %-5d %-22s %-22s %-2d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
+            printf("%-10s %-8d %-6d %-8d %-22s %-22s %-20d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
         }
     }
 }
@@ -325,7 +325,7 @@ void searchHarga(int n, int idx)
     {
         if (n == ke[i].hargaBarang)
         {
-            printf("%-7s %-3d %-3d %-5d %-22s %-22s %-2d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
+            printf("%-10s %-8d %-6d %-8d %-22s %-22s %-20d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
         }
     }
 }
@@ -340,7 +340,7 @@ void searchJenisEvent(int p, int idx)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printf("%-7s %-3d %-3d %-5d %-22s %-22s %-2d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
+                printf("%-10s %-8d %-6d %-8d %-22s %-22s %-20d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
     }
@@ -351,7 +351,7 @@ void searchJenisEvent(int p, int idx)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printf("%-7s %-3d %-3d %-5d %-22s %-22s %-2d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
+                printf("%-10s %-8d %-6d %-8d %-22s %-22s %-20d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
     }
@@ -362,7 +362,7 @@ void searchJenisEvent(int p, int idx)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printf("%-7s %-3d %-3d %-5d %-22s %-22s %-2d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
+                printf("%-10s %-8d %-6d %-8d %-22s %-22s %-20d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
     }
@@ -373,7 +373,7 @@ void searchJenisEvent(int p, int idx)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printf("%-7s %-3d %-3d %-5d %-22s %-22s %-2d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
+                printf("%-10s %-8d %-6d %-8d %-22s %-22s %-20d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
     }
@@ -384,7 +384,7 @@ void searchJenisEvent(int p, int idx)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printf("%-7s %-3d %-3d %-5d %-22s %-22s %-2d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
+                printf("%-10s %-8d %-6d %-8d %-22s %-22s %-20d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
     }
@@ -395,7 +395,7 @@ void searchJenisEvent(int p, int idx)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printf("%-7s %-3d %-3d %-5d %-22s %-22s %-2d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
+                printf("%-10s %-8d %-6d %-8d %-22s %-22s %-20d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
     }
@@ -406,7 +406,7 @@ void searchJenisEvent(int p, int idx)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printf("%-7s %-3d %-3d %-5d %-22s %-22s %-2d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
+                printf("%-10s %-8d %-6d %-8d %-22s %-22s %-20d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
     }
@@ -417,7 +417,7 @@ void searchJenisEvent(int p, int idx)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printf("%-7s %-3d %-3d %-5d %-22s %-22s %-2d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
+                printf("%-10s %-8d %-6d %-8d %-22s %-22s %-20d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
     }
@@ -428,7 +428,7 @@ void searchJenisEvent(int p, int idx)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printf("%-7s %-3d %-3d %-5d %-22s %-22s %-2d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
+                printf("%-10s %-8d %-6d %-8d %-22s %-22s %-20d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
     }
@@ -439,7 +439,7 @@ void searchJenisEvent(int p, int idx)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printf("%-7s %-3d %-3d %-5d %-22s %-22s %-2d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
+                printf("%-10s %-8d %-6d %-8d %-22s %-22s %-20d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
     }
@@ -450,7 +450,7 @@ void searchJenisEvent(int p, int idx)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printf("%-7s %-3d %-3d %-5d %-22s %-22s %-2d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
+                printf("%-10s %-8d %-6d %-8d %-22s %-22s %-20d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
     }
@@ -461,7 +461,7 @@ void searchJenisEvent(int p, int idx)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printf("%-7s %-3d %-3d %-5d %-22s %-22s %-2d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
+                printf("%-10s %-8d %-6d %-8d %-22s %-22s %-20d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
     }
@@ -472,7 +472,7 @@ void searchJenisEvent(int p, int idx)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printf("%-7s %-3d %-3d %-5d %-22s %-22s %-2d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
+                printf("%-10s %-8d %-6d %-8d %-22s %-22s %-20d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
     }
@@ -483,7 +483,7 @@ void searchJenisEvent(int p, int idx)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printf("%-7s %-3d %-3d %-5d %-22s %-22s %-2d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
+                printf("%-10s %-8d %-6d %-8d %-22s %-22s %-20d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
     }
@@ -494,7 +494,7 @@ void searchJenisEvent(int p, int idx)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printf("%-7s %-3d %-3d %-5d %-22s %-22s %-2d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
+                printf("%-10s %-8d %-6d %-8d %-22s %-22s %-20d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
             }
         }
     }
@@ -513,6 +513,7 @@ int main()
 
     do
     {
+        // stok
         int pestapora = 100, wethefest = 100, hitc = 100, hotel = 80, villa = 50, glamping = 30, sepakbola = 1000, basket = 1000, badminton = 400, garuda = 100, airasia = 60, citylink = 80, avengers = 60, barbie = 60, conjuring = 60;
         
         int idx = 0;
@@ -524,7 +525,7 @@ int main()
         }
         fclose(Tiket);
         stok(idx, &pestapora, &wethefest, &hitc, &hotel, &villa, &glamping, &sepakbola, &basket, &badminton, &garuda, &airasia, &citylink, &avengers, &barbie, &conjuring);
-        // printf("\e[1;1H\e[2J");
+        printf("\e[1;1H\e[2J");
         printf("====================================\n");
         printf("               Menu\n");
         printf("====================================\n");
@@ -637,11 +638,13 @@ int main()
                 scanf("%d", &SB);
                 sortbulan(SB, idx);
                 sortTanggal(SB, idx);
+                printf("\n");
+                printf("%-10s %-8s %-6s %-8s %-22s %-22s %-20s %-9s %-9s\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
                 for (int i = 0; i < idx; i++)
                 {
                     if (ke[i].bulan == SB)
                     {
-                        printf("%-7s %-3d %-3d %-5d %-22s %-22s %-2d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
+                        printf("%-10s %-8d %-6d %-8d %-22s %-22s %-20d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
                     }
                 }
             }
@@ -656,9 +659,11 @@ int main()
                     }
                 }
 
+                printf("\n");
+                printf("%-10s %-8s %-6s %-8s %-22s %-22s %-20s %-9s %-9s\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
                 for (int i = 0; i < idx; i++)
                 {
-                    printf("%-7s %-3d %-3d %-5d %-22s %-22s %-2d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
+                    printf("%-10s %-8d %-6d %-8d %-22s %-22s %-20d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
                 }
             }
             else if (SLP == 3)
@@ -675,9 +680,11 @@ int main()
                                 swap(j, j + 1);
                         }
                     }
+                    printf("\n");
+                    printf("%-10s %-8s %-6s %-8s %-22s %-22s %-20s %-9s %-9s\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
                     for (int i = 0; i < idx; i++)
                     {
-                        printf("%-7s %-3d %-3d %-5d %-22s %-22s %-2d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
+                        printf("%-10s %-8d %-6d %-8d %-22s %-22s %-20d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
                     }
                 }
                 else if (SJT == 2)
@@ -690,9 +697,11 @@ int main()
                                 swap(j, j + 1);
                         }
                     }
+                    printf("\n");
+                    printf("%-10s %-8s %-6s %-8s %-22s %-22s %-20s %-9s %-9s\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
                     for (int i = 0; i < idx; i++)
                     {
-                        printf("%-7s %-3d %-3d %-5d %-22s %-22s %-2d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
+                        printf("%-10s %-8d %-6d %-8d %-22s %-22s %-20d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
                     }
                 }
             }
@@ -729,9 +738,11 @@ int main()
                                 swap(j, j + 1);
                         }
                     }
+                    printf("\n");
+                    printf("%-10s %-8s %-6s %-8s %-22s %-22s %-20s %-9s %-9s\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
                     for (int i = 0; i < idx; i++)
                     {
-                        printf("%-7s %-3d %-3d %-5d %-22s %-22s %-2d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
+                        printf("%-10s %-8d %-6d %-8d %-22s %-22s %-20d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
                     }
                 }
                 else if (STP == 2)
@@ -744,9 +755,11 @@ int main()
                                 swap(j, j + 1);
                         }
                     }
+                    printf("\n");
+                    printf("%-10s %-8s %-6s %-8s %-22s %-22s %-20s %-9s %-9s\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
                     for (int i = 0; i < idx; i++)
                     {
-                        printf("%-7s %-3d %-3d %-5d %-22s %-22s %-2d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
+                        printf("%-10s %-8d %-6d %-8d %-22s %-22s %-20d %-9lld %-9lld\n", ke[i].nama, ke[i].tanggal, ke[i].bulan, ke[i].tahun, ke[i].jenisTiket, ke[i].jenisEvent, ke[i].totalBarang, ke[i].hargaBarang, ke[i].totalPembelian);
                     }
                 }
             }
@@ -768,7 +781,10 @@ int main()
                 {
                     printf("\nMasukan Nama yang dicari: ");
                     scanf(" %[^\n]", pilnama);
+                    printf("\n");
+                    printf("%-10s %-8s %-6s %-8s %-22s %-22s %-20s %-9s %-9s\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
                     searchNama(pilnama, idx);
+                    printf("\n");
                     printf("Ingin mencari nama lagi? (0 = tidak, 1 = lagi): ");
                     scanf("%d", &pun);
                 } while (pun == 1);
@@ -784,6 +800,7 @@ int main()
                     printf("Masukkan Tanggal yang dicari: ");
                     scanf("%d", &tgl);
                     printf("\n");
+                    printf("%-10s %-8s %-6s %-8s %-22s %-22s %-20s %-9s %-9s\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
                     searchData(tgl, bln, thn, idx);
                     printf("\n");
                     printf("Ingin Mencari tanggal lagi? (0 = tidak, 1 = lagi): ");
@@ -796,24 +813,23 @@ int main()
                 {
                     printf("\nCari harga tiket(1 = Termahal / 2 = Termurah): ");
                     scanf("%d", &pilharga);
-                    printf("\n");
                     int harga = ke[0].hargaBarang;
                     if (pilharga == 1)
                     {
                         for (int i = 0; i < idx; i++)
                         {
-                            if (harga < ke[i].hargaBarang)
-                                harga = ke[i].hargaBarang;
+                            if (harga < ke[i].hargaBarang) harga = ke[i].hargaBarang;
                         }
                     }
                     else if (pilharga == 2)
                     {
                         for (int i = 0; i < idx; i++)
                         {
-                            if (harga > ke[i].hargaBarang)
-                                harga = ke[i].hargaBarang;
+                            if (harga > ke[i].hargaBarang) harga = ke[i].hargaBarang;
                         }
                     }
+                    printf("\n");
+                    printf("%-10s %-8s %-6s %-8s %-22s %-22s %-20s %-9s %-9s\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
                     searchHarga(harga, idx);
                     printf("\n");
                     printf("Ingin mencari harga tiket lagi? (0 = tidak, 1 = lagi): ");
@@ -843,6 +859,8 @@ int main()
                     printf("15. The Conjuring\n");
                     printf("\nPilih jenis event: ");
                     scanf("%d", &PJE);
+                    printf("\n");
+                    printf("%-10s %-8s %-6s %-8s %-22s %-22s %-20s %-9s %-9s\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
                     searchJenisEvent(PJE, idx);
                     printf("\n");
                     printf("Ingin mencari harga tiket lagi? (0 = tidak, 1 = lagi): ");
