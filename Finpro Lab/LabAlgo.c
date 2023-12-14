@@ -858,4 +858,5 @@ int main()
     printf("Apakah ingin kembali ke Menu? (Y/T): ");
     scanf(" %c", &ulang);
     } while (ulang == 'Y' || ulang == 'y');
+return 0;
 }
