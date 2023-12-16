@@ -50,7 +50,7 @@ void stok(int idx, int *pestapora, int *wethefest, int *hitc, int *hotel, int *v
         {
             *sepakbola -= ke[i].totalBarang;
         }
-        else if (strcmp(ke[i].jenisEvent, "BasketBasket") == 0)
+        else if (strcmp(ke[i].jenisEvent, "Basket") == 0)
         {
             *basket -= ke[i].totalBarang;
         }
