@@ -285,7 +285,7 @@ void sortTanggal(int a, int idx)
     {
         for (int j = 0; j < idx - 1; j++)
         {
-            if (ke[j].bulan == a)
+            if (ke[j].bulan == a && ke[j + 1].bulan == a)
             {
                 if (ke[j].tanggal > ke[j + 1].tanggal)
                     swap(j, j + 1);
@@ -523,6 +523,11 @@ int main()
         {
             idx++;
         }
+        if (Tiket == NULL)
+        {
+            printf("Error, Data not found\n");
+            return 0;
+        }
         fclose(Tiket);
         stok(idx, &pestapora, &wethefest, &hitc, &hotel, &villa, &glamping, &sepakbola, &basket, &badminton, &garuda, &airasia, &citylink, &avengers, &barbie, &conjuring);
         printf("\e[1;1H\e[2J");
@@ -538,11 +543,6 @@ int main()
         {
         case 1:
             Tiket = fopen("Sales.txt", "a+");
-            if (Tiket == NULL)
-            {
-                printf("Error, Data not found\n");
-                return -1;
-            }
             do
             {
                 printf("\nNama Customer            : ");
