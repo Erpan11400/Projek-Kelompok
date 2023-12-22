@@ -814,7 +814,7 @@ int main()
         }
         fclose(Tiket);
         stok(idx, &pestapora, &wethefest, &hitc, &hotel, &villa, &glamping, &sepakbola, &basket, &badminton, &garuda, &airasia, &citylink, &avengers, &barbie, &conjuring);
-        // printf("\e[1;1H\e[2J");
+        printf("\e[1;1H\e[2J");
         printf("====================================\n");
         printf("               Menu\n");
         printf("====================================\n");
