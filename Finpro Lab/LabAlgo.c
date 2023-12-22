@@ -18,6 +18,7 @@ typedef struct Data
 } A;
 A ke[10001];
 
+int ketemu;
 // Print data menggunakan tabel
 void printfToTerminal(int i)
 {
@@ -362,168 +363,423 @@ void searchJenisEvent(int p, int idx)
 {
     if (p == 1)
     {
+        ketemu = 0;
         char namaEvent[] = "Pestapora";
         for (int i = 0; i < idx; i++)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printfToTerminal(i);
+                ketemu = 1;
             }
         }
+
+        if (ketemu)
+        {
+            printf("===============================================================================================================================================================\n");
+            printf("|  %-10s |  %-8s |  %-6s |  %-8s |  %-22s |  %-22s |  %-20s |  %-9s |  %-16s  |\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
+            printf("===============================================================================================================================================================\n");
+            for (int i = 0; i < idx; i++)
+            {
+                if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
+                {
+                    printfToTerminal(i);
+                }
+            }
+        }
+        else
+            printf("\nTidak dapat menampilkan data\nTidak ada data yang sesuai dengan keinginan anda\n");
     }
     else if (p == 2)
     {
+        ketemu = 0;
         char namaEvent[] = "We The Fest";
         for (int i = 0; i < idx; i++)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printfToTerminal(i);
+                ketemu = 1;
             }
         }
+
+        if (ketemu)
+        {
+            printf("===============================================================================================================================================================\n");
+            printf("|  %-10s |  %-8s |  %-6s |  %-8s |  %-22s |  %-22s |  %-20s |  %-9s |  %-16s  |\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
+            printf("===============================================================================================================================================================\n");
+            for (int i = 0; i < idx; i++)
+            {
+                if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
+                {
+                    printfToTerminal(i);
+                }
+            }
+        }
+        else
+            printf("Tidak dapat menampilkan data\nTidak ada data yang sesuai dengan keinginan anda\n");
     }
     else if (p == 3)
     {
+        ketemu = 0;
         char namaEvent[] = "Head In The Clouds";
         for (int i = 0; i < idx; i++)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printfToTerminal(i);
+                ketemu = 1;
             }
         }
+
+        if (ketemu)
+        {
+            printf("===============================================================================================================================================================\n");
+            printf("|  %-10s |  %-8s |  %-6s |  %-8s |  %-22s |  %-22s |  %-20s |  %-9s |  %-16s  |\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
+            printf("===============================================================================================================================================================\n");
+            for (int i = 0; i < idx; i++)
+            {
+                if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
+                {
+                    printfToTerminal(i);
+                }
+            }
+        }
+        else
+            printf("Tidak dapat menampilkan data\nTidak ada data yang sesuai dengan keinginan anda\n");
     }
     else if (p == 4)
     {
+        ketemu = 0;
         char namaEvent[] = "Hotel";
         for (int i = 0; i < idx; i++)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printfToTerminal(i);
+                ketemu = 1;
             }
         }
+
+        if (ketemu)
+        {
+            printf("===============================================================================================================================================================\n");
+            printf("|  %-10s |  %-8s |  %-6s |  %-8s |  %-22s |  %-22s |  %-20s |  %-9s |  %-16s  |\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
+            printf("===============================================================================================================================================================\n");
+            for (int i = 0; i < idx; i++)
+            {
+                if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
+                {
+                    printfToTerminal(i);
+                }
+            }
+        }
+        else
+            printf("Tidak dapat menampilkan data\nTidak ada data yang sesuai dengan keinginan anda\n");
     }
     else if (p == 5)
     {
+        ketemu = 0;
         char namaEvent[] = "Villa";
         for (int i = 0; i < idx; i++)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printfToTerminal(i);
+                ketemu = 1;
             }
         }
+
+        if (ketemu)
+        {
+            printf("===============================================================================================================================================================\n");
+            printf("|  %-10s |  %-8s |  %-6s |  %-8s |  %-22s |  %-22s |  %-20s |  %-9s |  %-16s  |\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
+            printf("===============================================================================================================================================================\n");
+            for (int i = 0; i < idx; i++)
+            {
+                if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
+                {
+                    printfToTerminal(i);
+                }
+            }
+        }
+        else
+            printf("Tidak dapat menampilkan data\nTidak ada data yang sesuai dengan keinginan anda\n");
     }
     else if (p == 6)
     {
+        ketemu = 0;
         char namaEvent[] = "Glamping";
         for (int i = 0; i < idx; i++)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printfToTerminal(i);
+                ketemu = 1;
             }
         }
+
+        if (ketemu)
+        {
+            printf("===============================================================================================================================================================\n");
+            printf("|  %-10s |  %-8s |  %-6s |  %-8s |  %-22s |  %-22s |  %-20s |  %-9s |  %-16s  |\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
+            printf("===============================================================================================================================================================\n");
+            for (int i = 0; i < idx; i++)
+            {
+                if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
+                {
+                    printfToTerminal(i);
+                }
+            }
+        }
+        else
+            printf("Tidak dapat menampilkan data\nTidak ada data yang sesuai dengan keinginan anda\n");
     }
     else if (p == 7)
     {
+        ketemu = 0;
         char namaEvent[] = "Sepak Bola";
         for (int i = 0; i < idx; i++)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printfToTerminal(i);
+                ketemu = 1;
             }
         }
+
+        if (ketemu)
+        {
+            printf("===============================================================================================================================================================\n");
+            printf("|  %-10s |  %-8s |  %-6s |  %-8s |  %-22s |  %-22s |  %-20s |  %-9s |  %-16s  |\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
+            printf("===============================================================================================================================================================\n");
+            for (int i = 0; i < idx; i++)
+            {
+                if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
+                {
+                    printfToTerminal(i);
+                }
+            }
+        }
+        else
+            printf("Tidak dapat menampilkan data\nTidak ada data yang sesuai dengan keinginan anda\n");
     }
     else if (p == 8)
     {
+        ketemu = 0;
         char namaEvent[] = "Basket";
         for (int i = 0; i < idx; i++)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printfToTerminal(i);
+                ketemu = 1;
             }
         }
+
+        if (ketemu)
+        {
+            printf("===============================================================================================================================================================\n");
+            printf("|  %-10s |  %-8s |  %-6s |  %-8s |  %-22s |  %-22s |  %-20s |  %-9s |  %-16s  |\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
+            printf("===============================================================================================================================================================\n");
+            for (int i = 0; i < idx; i++)
+            {
+                if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
+                {
+                    printfToTerminal(i);
+                }
+            }
+        }
+        else
+            printf("Tidak dapat menampilkan data\nTidak ada data yang sesuai dengan keinginan anda\n");
     }
     else if (p == 9)
     {
+        ketemu = 0;
         char namaEvent[] = "Badminton";
         for (int i = 0; i < idx; i++)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printfToTerminal(i);
+                ketemu = 1;
             }
         }
+
+        if (ketemu)
+        {
+            printf("===============================================================================================================================================================\n");
+            printf("|  %-10s |  %-8s |  %-6s |  %-8s |  %-22s |  %-22s |  %-20s |  %-9s |  %-16s  |\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
+            printf("===============================================================================================================================================================\n");
+            for (int i = 0; i < idx; i++)
+            {
+                if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
+                {
+                    printfToTerminal(i);
+                }
+            }
+        }
+        else
+            printf("Tidak dapat menampilkan data\nTidak ada data yang sesuai dengan keinginan anda\n");
     }
     else if (p == 10)
     {
+        ketemu = 0;
         char namaEvent[] = "Garuda Indonesia";
         for (int i = 0; i < idx; i++)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printfToTerminal(i);
+                ketemu = 1;
             }
         }
+
+        if (ketemu)
+        {
+            printf("===============================================================================================================================================================\n");
+            printf("|  %-10s |  %-8s |  %-6s |  %-8s |  %-22s |  %-22s |  %-20s |  %-9s |  %-16s  |\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
+            printf("===============================================================================================================================================================\n");
+            for (int i = 0; i < idx; i++)
+            {
+                if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
+                {
+                    printfToTerminal(i);
+                }
+            }
+        }
+        else
+            printf("Tidak dapat menampilkan data\nTidak ada data yang sesuai dengan keinginan anda\n");
     }
     else if (p == 11)
     {
+        ketemu = 0;
         char namaEvent[] = "Air Asia";
         for (int i = 0; i < idx; i++)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printfToTerminal(i);
+                ketemu = 1;
             }
         }
+
+        if (ketemu)
+        {
+            printf("===============================================================================================================================================================\n");
+            printf("|  %-10s |  %-8s |  %-6s |  %-8s |  %-22s |  %-22s |  %-20s |  %-9s |  %-16s  |\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
+            printf("===============================================================================================================================================================\n");
+            for (int i = 0; i < idx; i++)
+            {
+                if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
+                {
+                    printfToTerminal(i);
+                }
+            }
+        }
+        else
+            printf("Tidak dapat menampilkan data\nTidak ada data yang sesuai dengan keinginan anda\n");
     }
     else if (p == 12)
     {
+        ketemu = 0;
         char namaEvent[] = "City Link";
         for (int i = 0; i < idx; i++)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printfToTerminal(i);
+                ketemu = 1;
             }
         }
+
+        if (ketemu)
+        {
+            printf("===============================================================================================================================================================\n");
+            printf("|  %-10s |  %-8s |  %-6s |  %-8s |  %-22s |  %-22s |  %-20s |  %-9s |  %-16s  |\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
+            printf("===============================================================================================================================================================\n");
+            for (int i = 0; i < idx; i++)
+            {
+                if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
+                {
+                    printfToTerminal(i);
+                }
+            }
+        }
+        else
+            printf("Tidak dapat menampilkan data\nTidak ada data yang sesuai dengan keinginan anda\n");
     }
     else if (p == 13)
     {
+        ketemu = 0;
         char namaEvent[] = "Avengers";
         for (int i = 0; i < idx; i++)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printfToTerminal(i);
+                ketemu = 1;
             }
         }
+
+        if (ketemu)
+        {
+            printf("===============================================================================================================================================================\n");
+            printf("|  %-10s |  %-8s |  %-6s |  %-8s |  %-22s |  %-22s |  %-20s |  %-9s |  %-16s  |\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
+            printf("===============================================================================================================================================================\n");
+            for (int i = 0; i < idx; i++)
+            {
+                if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
+                {
+                    printfToTerminal(i);
+                }
+            }
+        }
+        else
+            printf("Tidak dapat menampilkan data\nTidak ada data yang sesuai dengan keinginan anda\n");
     }
     else if (p == 14)
     {
+        ketemu = 0;
         char namaEvent[] = "Barbie";
         for (int i = 0; i < idx; i++)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printfToTerminal(i);
+                ketemu = 1;
             }
         }
+
+        if (ketemu)
+        {
+            printf("===============================================================================================================================================================\n");
+            printf("|  %-10s |  %-8s |  %-6s |  %-8s |  %-22s |  %-22s |  %-20s |  %-9s |  %-16s  |\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
+            printf("===============================================================================================================================================================\n");
+            for (int i = 0; i < idx; i++)
+            {
+                if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
+                {
+                    printfToTerminal(i);
+                }
+            }
+        }
+        else
+            printf("Tidak dapat menampilkan data\nTidak ada data yang sesuai dengan keinginan anda\n");
     }
     else if (p == 15)
     {
+        ketemu = 0;
         char namaEvent[] = "The Conjuring";
         for (int i = 0; i < idx; i++)
         {
             if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
             {
-                printfToTerminal(i);
+                ketemu = 1;
             }
         }
+
+        if (ketemu)
+        {
+            printf("===============================================================================================================================================================\n");
+            printf("|  %-10s |  %-8s |  %-6s |  %-8s |  %-22s |  %-22s |  %-20s |  %-9s |  %-16s  |\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
+            printf("===============================================================================================================================================================\n");
+            for (int i = 0; i < idx; i++)
+            {
+                if (strcmp(ke[i].jenisEvent, namaEvent) == 0)
+                {
+                    printfToTerminal(i);
+                }
+            }
+        }
+        else
+            printf("Tidak dapat menampilkan data\nTidak ada data yang sesuai dengan keinginan anda\n");
     }
 }
 
@@ -532,11 +788,11 @@ int main()
     char ulang;                    // Variable yang dugunakan oleh semua fungsi
     int M, pun;                    // Variable yang digunakan oleh semua fungsi
     long long HT, TP;              // Variable yang digunakan oleh semua fungsi
-    char nama[101];                // Variable case 2
-    int tgl, bln, thn, TT, JT, JE; // Variable case 2
-    int SLP, SB, SJT, STP;         // Variable case 3
-    int S, pilharga, PJE;          // Variable case 4
-    char pilnama[101];             // Variable case 4
+    char nama[101];                // Variable case 3
+    int tgl, bln, thn, TT, JT, JE; // Variable case 3
+    int SLP, SB, SJT, STP;         // Variable case 4
+    int S, pilharga, PJE;          // Variable case 5
+    char pilnama[101];             // Variable case 5
 
     do
     {
@@ -558,7 +814,7 @@ int main()
         }
         fclose(Tiket);
         stok(idx, &pestapora, &wethefest, &hitc, &hotel, &villa, &glamping, &sepakbola, &basket, &badminton, &garuda, &airasia, &citylink, &avengers, &barbie, &conjuring);
-        printf("\e[1;1H\e[2J");
+        // printf("\e[1;1H\e[2J");
         printf("====================================\n");
         printf("               Menu\n");
         printf("====================================\n");
@@ -727,23 +983,43 @@ int main()
             {
                 do
                 {
-                    printf("\nPilih bulan (angka): ");
-                    scanf("%d", &SB);
-                } while (SB < 1 || SB > 12);
-                sorttahun(idx);
-                sortbulan(idx);
-                sortTanggal(idx);
-                printf("\n");
-                printf("===============================================================================================================================================================\n");
-                printf("|  %-10s |  %-8s |  %-6s |  %-8s |  %-22s |  %-22s |  %-20s |  %-9s |  %-16s  |\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
-                printf("===============================================================================================================================================================\n");
-                for (int i = 0; i < idx; i++)
-                {
-                    if (ke[i].bulan == SB)
+                    do
                     {
-                        printfToTerminal(i);
+                        printf("\nPilih bulan (angka): ");
+                        scanf("%d", &SB);
+                    } while (SB < 1 || SB > 12);
+
+                    for (int i = 0; i < idx; i++)
+                    {
+                        if (ke[i].bulan == SB)
+                        {
+                            ketemu = 1;
+                        }
                     }
-                }
+
+                    if (ketemu)
+                    {
+                        sorttahun(idx);
+                        sortbulan(idx);
+                        sortTanggal(idx);
+                        printf("\n");
+                        printf("===============================================================================================================================================================\n");
+                        printf("|  %-10s |  %-8s |  %-6s |  %-8s |  %-22s |  %-22s |  %-20s |  %-9s |  %-16s  |\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
+                        printf("===============================================================================================================================================================\n");
+                        for (int i = 0; i < idx; i++)
+                        {
+                            if (ke[i].bulan == SB)
+                            {
+                                printfToTerminal(i);
+                            }
+                        }
+                    }
+                    else
+                        printf("\nTidak dapat menampilkan data\nTidak ada data yang sesuai dengan keinginan anda\n");
+                    printf("\n");
+                    printf("Ingin mencari nama lagi? (0 = tidak, 1 = lagi): ");
+                    scanf("%d", &pun);
+                } while (pun == 1);
             }
             else if (SLP == 2)
             {
@@ -879,13 +1155,28 @@ int main()
             {
                 do
                 {
+                    ketemu = 0;
                     printf("\nMasukan Nama yang dicari: ");
                     scanf(" %[^\n]", pilnama);
-                    printf("\n");
-                    printf("===============================================================================================================================================================\n");
-                    printf("|  %-10s |  %-8s |  %-6s |  %-8s |  %-22s |  %-22s |  %-20s |  %-9s |  %-16s  |\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
-                    printf("===============================================================================================================================================================\n");
-                    searchNama(pilnama, idx);
+
+                    for (int i = 0; i < idx; i++)
+                    {
+                        if (strcasecmp(ke[i].nama, pilnama) == 0)
+                        {
+                            ketemu = 1;
+                        }
+                    }
+
+                    if (ketemu)
+                    {
+                        printf("\n");
+                        printf("===============================================================================================================================================================\n");
+                        printf("|  %-10s |  %-8s |  %-6s |  %-8s |  %-22s |  %-22s |  %-20s |  %-9s |  %-16s  |\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
+                        printf("===============================================================================================================================================================\n");
+                        searchNama(pilnama, idx);
+                    }
+                    else
+                        printf("\nTidak dapat menampilkan data\nTidak ada data yang sesuai dengan keinginan anda\n");
                     printf("\n");
                     printf("Ingin mencari nama lagi? (0 = tidak, 1 = lagi): ");
                     scanf("%d", &pun);
@@ -895,6 +1186,7 @@ int main()
             {
                 do
                 {
+                    ketemu = 0;
                     do
                     {
                         printf("\nMasukkan Tahun yang dicari   : ");
@@ -904,11 +1196,23 @@ int main()
                         printf("Masukkan Tanggal yang dicari : ");
                         scanf("%d", &tgl);
                     } while (thn < 1 || bln < 1 || bln > 12 || tgl < 1 || tgl > 31);
-                    printf("\n");
-                    printf("===============================================================================================================================================================\n");
-                    printf("|  %-10s |  %-8s |  %-6s |  %-8s |  %-22s |  %-22s |  %-20s |  %-9s |  %-16s  |\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
-                    printf("===============================================================================================================================================================\n");
-                    searchData(tgl, bln, thn, idx);
+
+                    for (int i = 0; i < idx; i++)
+                    {
+                        if ((ke[i].tahun == thn) && (ke[i].bulan == bln) && (ke[i].tanggal == tgl))
+                            ketemu = 1;
+                    }
+
+                    if (ketemu)
+                    {
+                        printf("\n");
+                        printf("===============================================================================================================================================================\n");
+                        printf("|  %-10s |  %-8s |  %-6s |  %-8s |  %-22s |  %-22s |  %-20s |  %-9s |  %-16s  |\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
+                        printf("===============================================================================================================================================================\n");
+                        searchData(tgl, bln, thn, idx);
+                    }
+                    else
+                        printf("\nTidak dapat menampilkan data\nTidak ada data yang sesuai dengan keinginan anda\n");
                     printf("\n");
                     printf("Ingin Mencari tanggal lagi? (0 = tidak, 1 = lagi): ");
                     scanf("%d", &pun);
@@ -974,9 +1278,6 @@ int main()
                         scanf("%d", &PJE);
                     } while (PJE < 1 || PJE > 15);
                     printf("\n");
-                    printf("===============================================================================================================================================================\n");
-                    printf("|  %-10s |  %-8s |  %-6s |  %-8s |  %-22s |  %-22s |  %-20s |  %-9s |  %-16s  |\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
-                    printf("===============================================================================================================================================================\n");
                     searchJenisEvent(PJE, idx);
                     printf("\n");
                     printf("Ingin mencari harga tiket lagi? (0 = tidak, 1 = lagi): ");
