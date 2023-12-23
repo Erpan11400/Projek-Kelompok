@@ -19,6 +19,7 @@ typedef struct Data
 A ke[10001];
 
 int ketemu;
+
 // Print data menggunakan tabel
 void printfToTerminal(int i)
 {
@@ -957,12 +958,12 @@ int main()
                     }
 
                     printf("\n");
-                    printf("Total Tiket   : ");
+                    printf("Total Tiket      : ");
                     scanf("%d", &TT);
                 } while (JT > 5 || JT < 1 || JE > 3 || JE < 1 || TT < 0);
 
                 printTofile(nama, tgl, bln, thn, JT, JE, TT);
-                printf("Apakah sudah selesai? (0 = sudah, 1 = belum): ");
+                printf("Apakah anda ingin input lagi? (0 = tidak, 1 = lagi): ");
                 scanf("%d", &pun);
             } while (pun == 1);
             printf("\nTiket berhasil ditambahkan\n\n");
@@ -983,43 +984,37 @@ int main()
             {
                 do
                 {
-                    do
-                    {
-                        printf("\nPilih bulan (angka): ");
-                        scanf("%d", &SB);
-                    } while (SB < 1 || SB > 12);
+                    printf("\nPilih bulan (angka): ");
+                    scanf("%d", &SB);
+                } while (SB < 1 || SB > 12);
 
+                for (int i = 0; i < idx; i++)
+                {
+                    if (ke[i].bulan == SB)
+                    {
+                        ketemu = 1;
+                    }
+                }
+
+                if (ketemu)
+                {
+                    sorttahun(idx);
+                    sortbulan(idx);
+                    sortTanggal(idx);
+                    printf("\n");
+                    printf("===============================================================================================================================================================\n");
+                    printf("|  %-10s |  %-8s |  %-6s |  %-8s |  %-22s |  %-22s |  %-20s |  %-9s |  %-16s  |\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
+                    printf("===============================================================================================================================================================\n");
                     for (int i = 0; i < idx; i++)
                     {
                         if (ke[i].bulan == SB)
                         {
-                            ketemu = 1;
+                            printfToTerminal(i);
                         }
                     }
-
-                    if (ketemu)
-                    {
-                        sorttahun(idx);
-                        sortbulan(idx);
-                        sortTanggal(idx);
-                        printf("\n");
-                        printf("===============================================================================================================================================================\n");
-                        printf("|  %-10s |  %-8s |  %-6s |  %-8s |  %-22s |  %-22s |  %-20s |  %-9s |  %-16s  |\n", "Nama", "Tanggal", "Bulan", "Tahun", "Jenis Tiket", "Jenis Event", "Pemesanan Tiket", "Harga", "Total Pembayaran");
-                        printf("===============================================================================================================================================================\n");
-                        for (int i = 0; i < idx; i++)
-                        {
-                            if (ke[i].bulan == SB)
-                            {
-                                printfToTerminal(i);
-                            }
-                        }
-                    }
-                    else
-                        printf("\nTidak dapat menampilkan data\nTidak ada data yang sesuai dengan keinginan anda\n");
-                    printf("\n");
-                    printf("Ingin mencari nama lagi? (0 = tidak, 1 = lagi): ");
-                    scanf("%d", &pun);
-                } while (pun == 1);
+                }
+                else
+                    printf("\nTidak dapat menampilkan data\nTidak ada data yang sesuai dengan keinginan anda\n");
             }
             else if (SLP == 2)
             {
@@ -1178,7 +1173,7 @@ int main()
                     else
                         printf("\nTidak dapat menampilkan data\nTidak ada data yang sesuai dengan keinginan anda\n");
                     printf("\n");
-                    printf("Ingin mencari nama lagi? (0 = tidak, 1 = lagi): ");
+                    printf("Ingin mencari lagi? (0 = tidak, 1 = lagi): ");
                     scanf("%d", &pun);
                 } while (pun == 1);
             }
@@ -1214,7 +1209,7 @@ int main()
                     else
                         printf("\nTidak dapat menampilkan data\nTidak ada data yang sesuai dengan keinginan anda\n");
                     printf("\n");
-                    printf("Ingin Mencari tanggal lagi? (0 = tidak, 1 = lagi): ");
+                    printf("Ingin Mencari lagi? (0 = tidak, 1 = lagi): ");
                     scanf("%d", &pun);
                 } while (pun == 1);
             }
